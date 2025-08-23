@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <h1>Screen Spotlight</h1>
+    </div>
+
+    <div class="shortcuts-section">
+      <div class="section-title">Hotkey Configuration</div>
+      <div class="hotkey-config">
+        <div class="hotkey-row">
+          <select id="hotkey1" class="hotkey-select">
+            <option value="ctrl">Ctrl</option>
+            <option value="shift">Shift</option>
+            <option value="alt">Alt</option>
+          </select>
+          <span class="plus-symbol">+</span>
+          <select id="hotkey2" class="hotkey-select">
+            <option value="shift">Shift</option>
+            <option value="ctrl">Ctrl</option>
+            <option value="alt">Alt</option>
+          </select>
+          <span class="plus-symbol">+ Mouse</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="section-title">Spotlight Settings</div>
+      
+      <div class="setting-group">
+        <label for="spotlightRadius">Spotlight Radius</label>
+        <div class="range-container">
+          <input type="range" id="spotlightRadius" min="50" max="400" step="10" value="125">
+          <span class="range-value" id="spotlightRadiusValue">125px</span>
+        </div>
+      </div>
+
+      <div class="setting-group">
+        <label for="dimOpacity">Background Dimming</label>
+        <div class="range-container">
+          <input type="range" id="dimOpacity" min="0.1" max="0.9" step="0.1" value="0.7">
+          <span class="range-value" id="dimOpacityValue">70%</span>
+        </div>
+      </div>
+
+      <div class="setting-group">
+        <label for="gradientSize">Edge Softness</label>
+        <div class="range-container">
+          <input type="range" id="gradientSize" min="5" max="50" step="5" value="20">
+          <span class="range-value" id="gradientSizeValue">20px</span>
+        </div>
+      </div>
+
+      <div class="setting-group">
+        <label>Cursor Style During Spotlight</label>
+        <div class="cursor-options">
+          <label class="cursor-option">
+            <input type="radio" id="cursorNormal" name="cursorStyle" value="normal">
+            <span class="cursor-label">Normal Cursor</span>
+          </label>
+          <label class="cursor-option">
+            <input type="radio" id="cursorHighlight" name="cursorStyle" value="highlight" checked>
+            <span class="cursor-label">Highlight Dot</span>
+          </label>
+          <label class="cursor-option">
+            <input type="radio" id="cursorNone" name="cursorStyle" value="none">
+            <span class="cursor-label">No Cursor</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button id="resetDefaults" class="reset-button">Reset to Defaults</button>
+      <div class="version">v1.0</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

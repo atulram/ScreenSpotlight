@@ -1,0 +1,67 @@
+/* Spotlight overlay styles */
+.spotlight-overlay {
+  will-change: mask, -webkit-mask;
+  transition: none;
+}
+
+/* Magnify container styles */
+.magnify-container {
+  will-change: transform, left, top;
+  transition: none;
+  backdrop-filter: none;
+  background: white;
+}
+
+.magnify-content {
+  will-change: transform;
+  transition: none;
+}
+
+/* Ensure overlays are on top of everything */
+.spotlight-overlay,
+.magnify-container {
+  position: fixed !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+/* Hide scrollbars in magnified content */
+.magnify-content ::-webkit-scrollbar {
+  display: none;
+}
+
+.magnify-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prevent text selection in overlays */
+.spotlight-overlay *,
+.magnify-container * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+/* Ensure smooth performance */
+.spotlight-overlay,
+.magnify-container,
+.magnify-content {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Custom spotlight cursor */
+.custom-spotlight-cursor {
+  will-change: left, top;
+  transition: none;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
