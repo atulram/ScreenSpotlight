@@ -1,4 +1,7 @@
-# 🎯 Screen Spotlight - Chrome Extension
+<div align="center" style="display: flex; align-items: center; gap: 16px; padding:10px;">
+   <img src="icons/icon48.png" alt="Screen Spotlight Icon" width="48" height="48" style="vertical-align: middle;" />
+   <span style="font-size: 1.3em; font-weight: bold; vertical-align: middle;">Screen Spotlight - Chrome Extension</span>
+</div>
 
 > **Professional spotlight tool for presentations, screen sharing, and online teaching**
 
@@ -128,7 +131,7 @@ Ctrl + Shift + Mouse Movement = Spotlight Mode
 ```
 screen-spotlight/
 ├── manifest.json          # Extension manifest (v3)
-├── background.js           # Service worker for tab injection
+├── background.js          # Service worker for tab injection
 ├── content.js             # Main spotlight functionality
 ├── overlay.css            # Spotlight styling
 ├── popup.html             # Settings interface
