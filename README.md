@@ -1,9 +1,10 @@
-<div align="center" style="display: flex; align-items: center; gap: 16px; padding:10px;">
-   <img src="icons/icon48.png" alt="Screen Spotlight Icon" width="48" height="48" style="vertical-align: middle;" />
-   <span style="font-size: 1.3em; font-weight: bold; vertical-align: middle;">Screen Spotlight - Chrome Extension</span>
+<div align="left">
+  <img src="icons/icon48.png" alt="Screen Spotlight Icon" width="48" height="48" align="left" style="margin-right: 16px;" />
+  <div>
+    <h1>Screen Spotlight - Chrome Extension</h1>
+    <p><strong>Professional spotlight tool for presentations, screen sharing, and online teaching</strong></p>
+  </div>
 </div>
-
-> **Professional spotlight tool for presentations, screen sharing, and online teaching**
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/atulram/ScreenSpotlight)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
