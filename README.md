@@ -281,7 +281,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Useful Links
 - 📖 [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/)
 - 🎯 [Project Homepage](#)
-- 🎪 [Demo Video](#)
+- 🎪 [Demo Video](https://www.youtube.com/watch?v=1w5iNeWQxZw)
 
 ---
 
